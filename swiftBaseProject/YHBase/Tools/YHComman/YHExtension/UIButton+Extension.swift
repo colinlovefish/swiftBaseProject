@@ -12,7 +12,5 @@ import UIKit
 
 extension UIButton {
     
-//    func <#name#>(<#parameters#>) -> <#return type#> {
-//        <#function body#>
-//    }
+
 }

@@ -41,6 +41,8 @@
 		7653FAC02146471C0064B52E /* YHTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653FABF2146471C0064B52E /* YHTabBarController.swift */; };
 		7653FAC8214647F20064B52E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653FAC7214647F20064B52E /* MainViewController.swift */; };
 		7653FACA214648290064B52E /* MainInvestListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653FAC9214648290064B52E /* MainInvestListCell.swift */; };
+		7653FAD0214654260064B52E /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 7653FACE214654250064B52E /* UIColor+Hex.m */; };
+		7653FAD5214656130064B52E /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653FAD4214656130064B52E /* UIColor+Hex.swift */; };
 		9FEDC7000C13CC76DDB80A51 /* Pods_swiftBaseProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FE3D679AA0705D27D99B5E /* Pods_swiftBaseProject.framework */; };
 		F166CAC1F4A13AE118338B48 /* Pods_swiftBaseProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B30F5F51FA3153D5CEFD2BA /* Pods_swiftBaseProjectTests.framework */; };
 /* End PBXBuildFile section */
@@ -118,6 +120,9 @@
 		7653FABF2146471C0064B52E /* YHTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHTabBarController.swift; sourceTree = "<group>"; };
 		7653FAC7214647F20064B52E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7653FAC9214648290064B52E /* MainInvestListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInvestListCell.swift; sourceTree = "<group>"; };
+		7653FACE214654250064B52E /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		7653FACF214654260064B52E /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		7653FAD4214656130064B52E /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		80FE3D679AA0705D27D99B5E /* Pods_swiftBaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftBaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7A19B4572257D789FA89660 /* Pods-swiftBaseProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftBaseProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-swiftBaseProjectTests/Pods-swiftBaseProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -336,9 +341,12 @@
 		7653FAA521461B9B0064B52E /* YHMarcro */ = {
 			isa = PBXGroup;
 			children = (
+				7653FACF214654260064B52E /* UIColor+Hex.h */,
+				7653FACE214654250064B52E /* UIColor+Hex.m */,
 				7653FAA621461BD80064B52E /* YHNetworkMacro.swift */,
 				7653FAA821461C130064B52E /* VariableDefineMacro.swift */,
 				7653FAAC21461C5B0064B52E /* YHUtil.swift */,
+				7653FAD4214656130064B52E /* UIColor+Hex.swift */,
 			);
 			path = YHMarcro;
 			sourceTree = "<group>";
@@ -653,6 +661,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				765222A421425B8F00AF4A54 /* ViewController.swift in Sources */,
+				7653FAD0214654260064B52E /* UIColor+Hex.m in Sources */,
 				7653FABA214623630064B52E /* YHRefreshHeader.swift in Sources */,
 				765124852142705D0072F707 /* ZYBadgeView.m in Sources */,
 				7653FAB4214622C00064B52E /* YHPictureShow.swift in Sources */,
@@ -663,6 +672,7 @@
 				765124822142705D0072F707 /* NSObject+Property.m in Sources */,
 				7653FA95214609E70064B52E /* BaseViewController.swift in Sources */,
 				7653FAB2214622970064B52E /* YHAlertLabel.swift in Sources */,
+				7653FAD5214656130064B52E /* UIColor+Hex.swift in Sources */,
 				765124812142705D0072F707 /* UISearchBar+PlaceholderAlignment.m in Sources */,
 				7653FAA421461ADD0064B52E /* UIBarButtonItem+Extension.swift in Sources */,
 				7651247D2142705D0072F707 /* ZYFileManager.m in Sources */,

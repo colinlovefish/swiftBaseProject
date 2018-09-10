@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+
 let SCREEN_WIDTH = UIScreen.main.bounds.size.width
 let SCREEN_HEIGHT = UIScreen.main.bounds.size.height
 
@@ -27,7 +28,8 @@ let STATUSBAR_HEIGHT:CGFloat = IS_IPHONE_X == true ? 44.0 : 20.0
  * 颜色
  */
 let TINT_COLOR = UIColor(red: 164.0/255, green: 0.0/255, blue: 0.0/255, alpha: 1.0)
-let TABBAR_TINT_COLOR = UIColor(red: 237.0/255, green: 31.0/255, blue: 59.0/255, alpha: 1.0)
+//let TABBAR_TINT_COLOR = UIColor(red: 237.0/255, green: 31.0/255, blue: 59.0/255, alpha: 1.0)
+let TABBAR_TINT_COLOR = UIColor.hexadecimalColor(hexadecimal: "#333333")
 let MAIN_WHITE_COLOR = UIColor(red: 242.0/255, green: 242.0/255, blue: 242.0/255, alpha: 1.0)
 let LABEL_TEXT_COLOR = UIColor.gray
 let INVEST_PERSON = UIColor(red: 34.0/255, green: 160.0/255, blue: 43.0/255, alpha: 1.0)

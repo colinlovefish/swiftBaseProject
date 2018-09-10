@@ -21,7 +21,7 @@ class YHTabBarController: UITabBarController,UITabBarControllerDelegate {
         self.addChildController(ChildController: MainViewController(), Title: "我", DefaultImage: UIImage(named:"tabBarPersionalCenter_default")!, SelectedImage: UIImage(named:"tabBarPersionalCenter_selected")!)
         
         self.delegate = self
-        self.tabBar.backgroundImage = YHUtil.createImageFrom(Color: UIColor.white)、
+        self.tabBar.backgroundImage = YHUtil.createImageFrom(Color: UIColor.white)
     
     }
     

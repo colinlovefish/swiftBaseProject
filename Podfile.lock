@@ -1,0 +1,91 @@
+PODS:
+  - Alamofire (4.7.3)
+  - Cartography (3.0.2)
+  - Dollar (7.1.0)
+  - Kingfisher (4.8.1)
+  - MJRefresh (3.1.15.6)
+  - Moya (11.0.2):
+    - Moya/Core (= 11.0.2)
+  - Moya/Core (11.0.2):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - Quick (1.3.1)
+  - ReactiveCocoa (7.2.0):
+    - ReactiveSwift (~> 3.1)
+  - ReactiveSwift (3.1.0):
+    - Result (~> 3.2)
+  - Result (3.2.4)
+  - SDCycleScrollView (1.75):
+    - SDWebImage (>= 4.0.0)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+  - Sleipnir (0.4.0)
+  - SnapKit (4.0.0)
+  - Surge (2.1.0)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (4.1.0)
+  - TYAlertController (1.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Cartography
+  - Dollar
+  - Kingfisher
+  - MJRefresh
+  - Moya
+  - Quick
+  - ReactiveCocoa
+  - SDCycleScrollView
+  - SDWebImage
+  - Sleipnir
+  - SnapKit
+  - Surge
+  - SVProgressHUD
+  - SwiftyJSON
+  - TYAlertController
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - Cartography
+    - Dollar
+    - Kingfisher
+    - MJRefresh
+    - Moya
+    - Quick
+    - ReactiveCocoa
+    - ReactiveSwift
+    - Result
+    - SDCycleScrollView
+    - SDWebImage
+    - Sleipnir
+    - SnapKit
+    - Surge
+    - SVProgressHUD
+    - SwiftyJSON
+    - TYAlertController
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Cartography: 231190d7d0b3107ce8d67c54189f059a509b3760
+  Dollar: dc69a2997fa5df12ae7a91fec897963664c26750
+  Kingfisher: 868c1149679a7ab6869be118faa9b5aed154aaf0
+  MJRefresh: 0efa19656679d70a0f47cbe76e56c2271fe53a97
+  Moya: a725035953bc1c0eb1be505ab903984501d82440
+  Quick: d17304d58d0d169dd0bd1c6e5c28e3318de32a1a
+  ReactiveCocoa: 476dae7ca790f40d30d186a1bd7ebae4290395d5
+  ReactiveSwift: 5b26d2e988fe0eed2daf48c4054d1de74db50184
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  Sleipnir: 35c40dc45c18d26e78f157a5553bf485e49ab6d9
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  Surge: 570bf0b2cb4cc92d1744050d45c064005c6c99ad
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+  TYAlertController: c121090edb0bea7426f987da94cdddd81eef4231
+
+PODFILE CHECKSUM: a7396e929eb89b2b90ee7f041d707dbc5f34d978
+
+COCOAPODS: 1.5.3

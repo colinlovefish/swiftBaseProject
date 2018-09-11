@@ -43,8 +43,8 @@
 		7653FACA214648290064B52E /* MainInvestListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653FAC9214648290064B52E /* MainInvestListCell.swift */; };
 		7653FAD0214654260064B52E /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 7653FACE214654250064B52E /* UIColor+Hex.m */; };
 		7653FAD5214656130064B52E /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653FAD4214656130064B52E /* UIColor+Hex.swift */; };
-		768ECB6E21474BBB00580876 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768ECB6C21474BBA00580876 /* Realm.framework */; };
-		768ECB6F21474BBB00580876 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768ECB6D21474BBB00580876 /* RealmSwift.framework */; };
+		768ECB6E21474BBB00580876 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768ECB6C21474BBA00580876 /* Realm.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		768ECB6F21474BBB00580876 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768ECB6D21474BBB00580876 /* RealmSwift.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		9FEDC7000C13CC76DDB80A51 /* Pods_swiftBaseProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FE3D679AA0705D27D99B5E /* Pods_swiftBaseProject.framework */; };
 		F166CAC1F4A13AE118338B48 /* Pods_swiftBaseProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B30F5F51FA3153D5CEFD2BA /* Pods_swiftBaseProjectTests.framework */; };
 /* End PBXBuildFile section */
@@ -440,6 +440,7 @@
 				7652229B21425B8F00AF4A54 /* Frameworks */,
 				7652229C21425B8F00AF4A54 /* Resources */,
 				1883A7E1842E45C2ED2428A6 /* [CP] Embed Pods Frameworks */,
+				768ECB7021475A0800580876 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -584,6 +585,8 @@
 				"${BUILT_PRODUCTS_DIR}/Surge/Surge.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/TYAlertController/TYAlertController.framework",
+				"$(SRCROOT)/Realm.framework",
+				"$(SRCROOT)/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -610,6 +613,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swiftBaseProject/Pods-swiftBaseProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		768ECB7021475A0800580876 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nbash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"\n";
 		};
 		A251723BF7042CCFBC008563 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;

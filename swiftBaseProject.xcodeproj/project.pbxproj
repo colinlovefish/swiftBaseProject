@@ -43,6 +43,8 @@
 		7653FACA214648290064B52E /* MainInvestListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653FAC9214648290064B52E /* MainInvestListCell.swift */; };
 		7653FAD0214654260064B52E /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 7653FACE214654250064B52E /* UIColor+Hex.m */; };
 		7653FAD5214656130064B52E /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653FAD4214656130064B52E /* UIColor+Hex.swift */; };
+		768ECB6E21474BBB00580876 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768ECB6C21474BBA00580876 /* Realm.framework */; };
+		768ECB6F21474BBB00580876 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768ECB6D21474BBB00580876 /* RealmSwift.framework */; };
 		9FEDC7000C13CC76DDB80A51 /* Pods_swiftBaseProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FE3D679AA0705D27D99B5E /* Pods_swiftBaseProject.framework */; };
 		F166CAC1F4A13AE118338B48 /* Pods_swiftBaseProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B30F5F51FA3153D5CEFD2BA /* Pods_swiftBaseProjectTests.framework */; };
 /* End PBXBuildFile section */
@@ -123,6 +125,8 @@
 		7653FACE214654250064B52E /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		7653FACF214654260064B52E /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		7653FAD4214656130064B52E /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		768ECB6C21474BBA00580876 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		768ECB6D21474BBB00580876 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		80FE3D679AA0705D27D99B5E /* Pods_swiftBaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftBaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7A19B4572257D789FA89660 /* Pods-swiftBaseProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftBaseProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-swiftBaseProjectTests/Pods-swiftBaseProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,7 +136,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				768ECB6E21474BBB00580876 /* Realm.framework in Frameworks */,
 				9FEDC7000C13CC76DDB80A51 /* Pods_swiftBaseProject.framework in Frameworks */,
+				768ECB6F21474BBB00580876 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +420,8 @@
 		E1B7A2D4CA77E5AE110D44E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				768ECB6C21474BBA00580876 /* Realm.framework */,
+				768ECB6D21474BBB00580876 /* RealmSwift.framework */,
 				80FE3D679AA0705D27D99B5E /* Pods_swiftBaseProject.framework */,
 				4B30F5F51FA3153D5CEFD2BA /* Pods_swiftBaseProjectTests.framework */,
 			);
@@ -556,6 +564,8 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-swiftBaseProject/Pods-swiftBaseProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
@@ -576,6 +586,8 @@
 				"${BUILT_PRODUCTS_DIR}/TYAlertController/TYAlertController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cartography.framework",
@@ -866,6 +878,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 65XTLQ4WMM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"\"$(SRCROOT)/\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/swiftBaseProject/YHBase/Tools/YHComman/PrefixHeader.pch";
 				INFOPLIST_FILE = swiftBaseProject/Info.plist;
@@ -888,6 +905,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 65XTLQ4WMM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"\"$(SRCROOT)/\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/swiftBaseProject/YHBase/Tools/YHComman/PrefixHeader.pch";
 				INFOPLIST_FILE = swiftBaseProject/Info.plist;

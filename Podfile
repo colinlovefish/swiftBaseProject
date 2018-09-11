@@ -20,6 +20,7 @@ target 'swiftBaseProject' do
     pod 'SDCycleScrollView'
     pod 'MJRefresh'
     pod 'SDWebImage'
+#    pod 'RealmSwift'
 
 end
 

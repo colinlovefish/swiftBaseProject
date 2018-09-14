@@ -14,6 +14,11 @@ PODS:
     - ReactiveSwift (~> 3.1)
   - ReactiveSwift (3.1.0):
     - Result (~> 3.2)
+  - Realm (3.7.6):
+    - Realm/Headers (= 3.7.6)
+  - Realm/Headers (3.7.6)
+  - RealmSwift (3.7.6):
+    - Realm (= 3.7.6)
   - Result (3.2.4)
   - SDCycleScrollView (1.75):
     - SDWebImage (>= 4.0.0)
@@ -36,6 +41,7 @@ DEPENDENCIES:
   - Moya
   - Quick
   - ReactiveCocoa
+  - RealmSwift
   - SDCycleScrollView
   - SDWebImage
   - Sleipnir
@@ -56,6 +62,8 @@ SPEC REPOS:
     - Quick
     - ReactiveCocoa
     - ReactiveSwift
+    - Realm
+    - RealmSwift
     - Result
     - SDCycleScrollView
     - SDWebImage
@@ -76,6 +84,8 @@ SPEC CHECKSUMS:
   Quick: d17304d58d0d169dd0bd1c6e5c28e3318de32a1a
   ReactiveCocoa: 476dae7ca790f40d30d186a1bd7ebae4290395d5
   ReactiveSwift: 5b26d2e988fe0eed2daf48c4054d1de74db50184
+  Realm: 9eaecad54712d6246d08ba34c10f354e4715d7d3
+  RealmSwift: 1fe08b4ebaeeaacf17f9ba0343f7b25c9fc31fa6
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
@@ -86,6 +96,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
   TYAlertController: c121090edb0bea7426f987da94cdddd81eef4231
 
-PODFILE CHECKSUM: a7396e929eb89b2b90ee7f041d707dbc5f34d978
+PODFILE CHECKSUM: c4e5edc97f31bd8d511089f27e11c999476856c6
 
 COCOAPODS: 1.5.3

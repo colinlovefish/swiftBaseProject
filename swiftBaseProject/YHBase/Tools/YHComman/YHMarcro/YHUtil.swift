@@ -26,7 +26,7 @@ class YHUtil: NSObject {
         return label
     }
     
-    class func createButtonWith(Type btnType:UIButtonType, Title title:String?, Frame frame:CGRect, TitleColor titleColor:UIColor?, Font font:CGFloat?, BackgroundColor backgroundColor:UIColor?, Target target:Any?, Action action:Selector?, TextAligtment textAlightment:NSTextAlignment?) -> UIButton{
+    class func createButtonWith(Type btnType:UIButton.ButtonType, Title title:String?, Frame frame:CGRect, TitleColor titleColor:UIColor?, Font font:CGFloat?, BackgroundColor backgroundColor:UIColor?, Target target:Any?, Action action:Selector?, TextAligtment textAlightment:NSTextAlignment?) -> UIButton{
         let button = UIButton(type: btnType)
         button.frame  = frame
         if title != nil {
@@ -50,7 +50,7 @@ class YHUtil: NSObject {
         return button
     }
     
-    class func createTextFieldWith(Frame frame:CGRect, BoardStyle boardStyle:UITextBorderStyle, PlaceHolder placeHolder:String?, BackgroundColor backgroundColor:UIColor?, TintColor tintColor:UIColor?, IsPWD isPwd:Bool) -> UITextField{
+    class func createTextFieldWith(Frame frame:CGRect, BoardStyle boardStyle:UITextField.BorderStyle, PlaceHolder placeHolder:String?, BackgroundColor backgroundColor:UIColor?, TintColor tintColor:UIColor?, IsPWD isPwd:Bool) -> UITextField{
         let textField = UITextField(frame: frame)
         textField.borderStyle = boardStyle
         if placeHolder != nil {

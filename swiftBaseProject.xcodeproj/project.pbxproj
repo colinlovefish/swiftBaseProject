@@ -43,6 +43,8 @@
 		7653FACA214648290064B52E /* MainInvestListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653FAC9214648290064B52E /* MainInvestListCell.swift */; };
 		7653FAD0214654260064B52E /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 7653FACE214654250064B52E /* UIColor+Hex.m */; };
 		7653FAD5214656130064B52E /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653FAD4214656130064B52E /* UIColor+Hex.swift */; };
+		7685FD0A22CF4DB80021330C /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685FD0922CF4DB80021330C /* BaseNavigationController.swift */; };
+		7685FD0C22CF4E2F0021330C /* constantFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685FD0B22CF4E2F0021330C /* constantFile.swift */; };
 		9FEDC7000C13CC76DDB80A51 /* Pods_swiftBaseProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FE3D679AA0705D27D99B5E /* Pods_swiftBaseProject.framework */; };
 		F166CAC1F4A13AE118338B48 /* Pods_swiftBaseProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B30F5F51FA3153D5CEFD2BA /* Pods_swiftBaseProjectTests.framework */; };
 /* End PBXBuildFile section */
@@ -123,6 +125,8 @@
 		7653FACE214654250064B52E /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		7653FACF214654260064B52E /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		7653FAD4214656130064B52E /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		7685FD0922CF4DB80021330C /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		7685FD0B22CF4E2F0021330C /* constantFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constantFile.swift; sourceTree = "<group>"; };
 		80FE3D679AA0705D27D99B5E /* Pods_swiftBaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftBaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7A19B4572257D789FA89660 /* Pods-swiftBaseProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftBaseProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-swiftBaseProjectTests/Pods-swiftBaseProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -300,6 +304,7 @@
 				7653FA9921460C270064B52E /* BaseViewControllerProtocol.swift */,
 				7653FABD214646E00064B52E /* YHNavigationController.swift */,
 				7653FABF2146471C0064B52E /* YHTabBarController.swift */,
+				7685FD0922CF4DB80021330C /* BaseNavigationController.swift */,
 			);
 			path = baseViewController;
 			sourceTree = "<group>";
@@ -311,6 +316,7 @@
 				7653FA9D2146180B0064B52E /* YHExtension */,
 				7653FA9C214617EA0064B52E /* YHCustom */,
 				7653FAB0214620470064B52E /* PrefixHeader.pch */,
+				7685FD0B22CF4E2F0021330C /* constantFile.swift */,
 			);
 			path = YHComman;
 			sourceTree = "<group>";
@@ -680,12 +686,14 @@
 			files = (
 				765222A421425B8F00AF4A54 /* ViewController.swift in Sources */,
 				7653FAD0214654260064B52E /* UIColor+Hex.m in Sources */,
+				7685FD0C22CF4E2F0021330C /* constantFile.swift in Sources */,
 				7653FABA214623630064B52E /* YHRefreshHeader.swift in Sources */,
 				765124852142705D0072F707 /* ZYBadgeView.m in Sources */,
 				7653FAB4214622C00064B52E /* YHPictureShow.swift in Sources */,
 				7651247F2142705D0072F707 /* UIScrollView+EmptyDataSet.m in Sources */,
 				765124722142705D0072F707 /* ZYChineseSort.m in Sources */,
 				7653FABC214623950064B52E /* YHSegment.swift in Sources */,
+				7685FD0A22CF4DB80021330C /* BaseNavigationController.swift in Sources */,
 				7653FAC8214647F20064B52E /* MainViewController.swift in Sources */,
 				765124822142705D0072F707 /* NSObject+Property.m in Sources */,
 				7653FA95214609E70064B52E /* BaseViewController.swift in Sources */,
@@ -899,7 +907,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "yinghu-colin.swiftBaseProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -926,7 +934,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "yinghu-colin.swiftBaseProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

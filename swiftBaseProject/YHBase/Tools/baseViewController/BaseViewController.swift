@@ -31,7 +31,7 @@ class BaseViewController: UIViewController {
         self.navigationController?.navigationBar.backgroundColor = UIColor(red: 232.0/255, green: 55.0/255, blue: 64.0/255, alpha: 1.0)
         self.navigationController?.navigationBar.barTintColor = UIColor.clear
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(named:""), for: .default)
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
         self.navigationController?.navigationBar.shadowImage = YHUtil.createImageFrom(Color: UIColor.clear)
     }
     

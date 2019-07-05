@@ -60,7 +60,7 @@ class YHProgressView: UIView {
         animation.duration = CFTimeInterval(pro/100)
         animation.fromValue = NSNumber.init(value: 0.0)
         animation.toValue = NSNumber.init(value: pro/100)
-        animation.fillMode = "forwards"
+        animation.fillMode = CAMediaTimingFillMode(rawValue: "forwards")
         animation.isRemovedOnCompletion = false
         mainPathLayer?.add(animation, forKey: "strokeEndAnimation")
         

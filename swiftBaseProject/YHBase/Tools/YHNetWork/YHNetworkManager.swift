@@ -10,6 +10,11 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
+//enum YHRefreshState {
+//     YHRefreshStateNone ,
+//     YHRefreshStateDoing ,
+//}
+
 class YHNetworkManager: NSObject {
     struct responseData {
         var request:URLRequest?

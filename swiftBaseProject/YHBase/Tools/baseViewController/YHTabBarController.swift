@@ -16,6 +16,8 @@ class YHTabBarController: UITabBarController,UITabBarControllerDelegate {
         
         // Do any additional setup after loading the view.
         
+//         UINavigationController *nav1 = UINavigationController 
+        
         self.addChildController(ChildController: MainViewController(), Title: "电销", DefaultImage: UIImage(named:"tabBarTask_default")!, SelectedImage: UIImage(named:"tabBarTask_selected")!)
         self.addChildController(ChildController: MainViewController(), Title: "车辆", DefaultImage: UIImage(named:"tabbarCar_default")!, SelectedImage: UIImage(named:"tabbarCar_selected")!)
         self.addChildController(ChildController: MainViewController(), Title: "我", DefaultImage: UIImage(named:"tabBarPersionalCenter_default")!, SelectedImage: UIImage(named:"tabBarPersionalCenter_selected")!)
@@ -27,10 +29,10 @@ class YHTabBarController: UITabBarController,UITabBarControllerDelegate {
     
     func addChildController(ChildController child:UIViewController, Title title:String, DefaultImage defaultImage:UIImage, SelectedImage selectedImage:UIImage){
         child.tabBarItem = UITabBarItem(title: title, image: defaultImage.withRenderingMode(.alwaysOriginal), selectedImage: selectedImage.withRenderingMode(.alwaysOriginal))
-        child.tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor:TABBAR_TINT_COLOR], for: .selected)
+        child.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor:TABBAR_TINT_COLOR], for: .selected)
         
         let nav = YHNavigationController(rootViewController: child)
-        self.addChildViewController(nav)
+        self.addChild(nav)
         
     }
     
